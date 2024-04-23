@@ -3,7 +3,7 @@ import { BASEURL } from "./bookings"
 
 export const GetAllMovies = async (payload) =>{
     try {
-        const response = await axiosInstance().get("http://localhost:8080/api/movies/list", payload)
+        const response = await axiosInstance().get(`https://${BASEURL}/api/movies/list`, payload)
         return response
     } catch (error) {
         return error
@@ -12,7 +12,7 @@ export const GetAllMovies = async (payload) =>{
 
 export const GetMovieById = async (movieId) => {
     try {
-        const response = await axiosInstance().get(`http://localhost:8080/api/movies/get-by-id/${movieId}`)
+        const response = await axiosInstance().get(`https://${BASEURL}/api/movies/get-by-id/${movieId}`)
         return response
     } catch (error) {
         return error
@@ -21,7 +21,7 @@ export const GetMovieById = async (movieId) => {
 
 export const AddMovie = async (payload) => {
     try {
-        const response = await axiosInstance().post("http://localhost:8080/api/movies/add-movie", payload)
+        const response = await axiosInstance().post(`https://${BASEURL}/api/movies/add-movie`, payload)
         return response
     } catch (error) {
         return error
@@ -30,7 +30,7 @@ export const AddMovie = async (payload) => {
 
 export const UpdateMovie = async (payload) =>{
     try {
-        const response = await axiosInstance().post("http://localhost:8080/api/movies/update-movie", payload)
+        const response = await axiosInstance().post(`https://${BASEURL}/api/movies/update-movie`, payload)
         return response
     } catch (error) {
         return error
@@ -39,7 +39,7 @@ export const UpdateMovie = async (payload) =>{
 
 export const DeleteMovie = async (payload) =>{
     try {
-        const response = await axiosInstance().post("http://localhost:8080/api/movies/delete-movie", payload)
+        const response = await axiosInstance().post(`https://${BASEURL}/api/movies/delete-movie`, payload)
         return response
     } catch (error) {
         return error
