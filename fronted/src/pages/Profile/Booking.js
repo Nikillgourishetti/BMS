@@ -21,7 +21,7 @@ function Booking() {
 
     useEffect(() => {
         getData()
-    }, [])
+      }, [])
   return (
     <div>
       <Row gutter={[16, 16]}>

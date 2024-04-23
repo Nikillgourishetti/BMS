@@ -1,6 +1,6 @@
 const express = require('express')
-require("dotenv").config()
 var cors = require('cors')
+require("dotenv").config()
 const userRoute = require("./routes/userRoute")
 const movieRoute = require("./routes/movieRoute")
 const theaterRoute = require("./routes/theatreRoute")
