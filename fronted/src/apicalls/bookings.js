@@ -1,6 +1,7 @@
 import { axiosInstance } from "./axiosinstance"
 
-export const BASEURL = "bms-c.onrender.com"
+export const BASEURL = window.location.host
+// "bms-c.onrender.com"
 
 export const BookShowTickets = async(payload) => {
     try {
