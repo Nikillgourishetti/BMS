@@ -21,6 +21,11 @@ app.use("/api/theatres", theaterRoute)
 app.use("/api/shows", showRoute)
 app.use("/api/bookings", bookingRoute)
 
+app.get('/profile', function (req, res) {
+    res.redirect('/');
+})
+
+
 
 app.listen(8080, () =>{
     console.log('server running')
