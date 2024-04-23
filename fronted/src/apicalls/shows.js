@@ -1,5 +1,5 @@
 import { axiosInstance } from "./axiosinstance"
-
+import { BASEURL } from "./bookings"
 
 export const AddShow = async (payload) => {
     try {

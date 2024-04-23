@@ -1,5 +1,5 @@
-
 const { axiosInstance } = require("./axiosinstance")
+import { BASEURL } from "./bookings"
 
 export const RegisterUser = async (payload) =>{
     try {

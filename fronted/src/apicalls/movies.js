@@ -1,4 +1,5 @@
 import { axiosInstance } from "./axiosinstance"
+import { BASEURL } from "./bookings"
 
 export const GetAllMovies = async (payload) =>{
     try {
