@@ -16,9 +16,8 @@ function Shows({
 
     const getData = async() =>{
         try {
-            const response = await GetShowsByTheatreId({
-                theatreId: theatre._id
-            })
+            const response = await GetShowsByTheatreId(theatre._id)
+            
             
             const moviesresponse = await GetAllMovies()
 
@@ -108,7 +107,7 @@ function Shows({
             theatre: theatre._id
           })
 
-          if(response.success){
+          if(response.data.success){
             message.success(response.data.message)
             setView("table")
             getData()

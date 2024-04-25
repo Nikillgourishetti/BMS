@@ -41,6 +41,9 @@ function ProtectedRoute({ children }) {
         <div className="header bg-primary flex justify-between p-2">
           <div>
             <h1 className="text-2xl text-white cursor-pointer"
+            onClick={() => {
+              navigate("/");
+            }}
             >Book My Show</h1>
           </div>
 

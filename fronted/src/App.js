@@ -20,7 +20,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 function App() {
   return (
     <div className="App">
-      <p> Movie Time </p>
+      <h1 className='top'></h1>
       <BrowserRouter>
       <Routes>
         <Route path ="/" element={ <ProtectedRoute> <Home /></ProtectedRoute> } />
